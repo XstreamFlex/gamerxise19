@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerXise - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'playstation-blue': '#003791',
+                        'xbox-green': '#107c10',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-playstation-blue transition-colors">
+                        GamerXise
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-gray-600 hover:text-playstation-blue transition-colors">About</a>
+                    <a href="index.html#services" class="text-gray-600 hover:text-playstation-blue transition-colors">Services</a>
+                    <a href="index.html#pricing" class="text-gray-600 hover:text-playstation-blue transition-colors">Pricing</a>
+                    <a href="index.html#testimonials" class="text-gray-600 hover:text-playstation-blue transition-colors">Testimonials</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-playstation-blue transition-colors">Blog</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="relative py-20 bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1ODg4NTB8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBibG9nfGVufDB8fHx8MTcyMjk4ODIxOXww&ixlib=rb-4.0.3&q=80&w=1080" 
+             alt="Gaming blog" 
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">GamerXise Blog</h1>
+            <p class="text-xl md:text-2xl">Insights and tips on gaming fitness</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="prose lg:prose-xl">
+                <h2 class="text-3xl font-bold mb-6">Welcome to the GamerXise Blog!</h2>
+                <p class="text-lg mb-8">Here, you'll find the latest insights and tips on combining gaming and fitness. Check out our latest posts:</p>
+                
+                <div class="space-y-12">
+                    <article class="border-b border-gray-200 pb-12">
+                        <h3 class="text-2xl font-bold text-playstation-blue mb-4">Why Gaming and Exercise Are Better Together</h3>
+                        <p class="text-gray-700 mb-4">Discover how combining gaming and exercise can lead to improved health, better focus, and enhanced gaming skills.</p>
+                        <a href="#" class="inline-block bg-playstation-blue hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                            Read More
+                        </a>
+                    </article>
+                    
+                    <article class="border-b border-gray-200 pb-12">
+                        <h3 class="text-2xl font-bold text-xbox-green mb-4">Health Benefits of Gaming and Exercise</h3>
+                        <p class="text-gray-700 mb-4">Learn about the numerous health benefits of integrating gaming and exercise, from weight loss to improved mood.</p>
+                        <a href="#" class="inline-block bg-xbox-green hover:bg-green-800 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                            Read More
+                        </a>
+                    </article>
+                    
+                    <article>
+                        <h3 class="text-2xl font-bold text-playstation-blue mb-4">Best Fitness Games of 2025 and Why GamerXise Is Better</h3>
+                        <p class="text-gray-700 mb-4">Explore the top fitness games of 2025 and find out why GamerXise offers a superior experience for gamers looking to stay fit.</p>
+                        <a href="#" class="inline-block bg-playstation-blue hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                            Read More
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-gray-700 mb-6">Subscribe to our newsletter for the latest gaming fitness tips and updates.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-playstation-blue focus:border-transparent w-full sm:w-96">
+                <button type="submit" class="bg-playstation-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">GamerXise</h3>
+                    <p class="text-gray-400">Transform your gaming experience while getting fit.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 GamerXise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.querySelector('.md\\:hidden + div');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                // This would toggle a mobile menu if implemented
+                alert('Mobile menu would open here in a full implementation');
+            });
+        });
+    </script>
+</body>
+</html>
